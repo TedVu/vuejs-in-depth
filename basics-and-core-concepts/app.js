@@ -15,6 +15,12 @@ const app = Vue.createApp({
         return '<h1>Master Vue!</h1>';
       }
     },
+    increase() {
+      this.counter = this.counter + 1;
+    },
+    decrease() {
+      this.counter = this.counter - 1;
+    },
   },
 });
 

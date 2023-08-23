@@ -20,7 +20,7 @@
       <h2>My Course Goal</h2>
       <p v-html="outputGoal()"></p>
       <button @click="++counter">Add</button>
-      <button>Reduce</button>
+      <button @click="--counter">Reduce</button>
       <p>Result: {{ counter }}</p>
     </section>
   </body>

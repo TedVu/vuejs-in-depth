@@ -23,6 +23,7 @@
       <form v-on:submit.prevent="submitForm">
         <button v-on:click="increase()">Add</button>
         <button v-on:click="decrease()">Reduce</button>
+        <p v-once>Starting result: {{ counter }}</p>
         <p>Result: {{ counter }}</p>
       </form>
       <input type="text" v-on:input="setName($event, 'Ted Vu')" />

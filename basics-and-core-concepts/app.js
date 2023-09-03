@@ -11,6 +11,9 @@ const app = Vue.createApp({
     setName(e, someName) {
       this.name = e.target.value + ' ' + someName + ' ' + anotherName;
     },
+    submitForm() {
+      alert('exploring event modifier');
+    },
     outputGoal() {
       const randomNumber = Math.random();
       if (randomNumber < 0.5) {

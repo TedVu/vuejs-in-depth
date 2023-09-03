@@ -8,8 +8,8 @@ const app = Vue.createApp({
     };
   },
   methods: {
-    setName(e) {
-      this.name = e.target.value;
+    setName(e, someName) {
+      this.name = e.target.value + ' ' + someName + ' ' + anotherName;
     },
     outputGoal() {
       const randomNumber = Math.random();

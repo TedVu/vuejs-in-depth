@@ -26,7 +26,7 @@
         <p v-once>Starting result: {{ counter }}</p>
         <p>Result: {{ counter }}</p>
       </form>
-      <input type="text" v-on:input="setName($event, 'Ted Vu')" />
+      <input type="text" v-model="name" />
       <p>Your name: {{ name }}</p>
     </section>
   </body>

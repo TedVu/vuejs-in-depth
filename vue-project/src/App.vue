@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+
+const dynamicSlotName = 'Ted'
 </script>
 
 <template>
@@ -11,6 +13,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="You did it!"
         >Hello World Button
         <template #header> Header slot should be rendered </template>
+        <template #[dynamicSlotName]>Dynamic Slot Name</template>
       </HelloWorld>
 
       <nav>

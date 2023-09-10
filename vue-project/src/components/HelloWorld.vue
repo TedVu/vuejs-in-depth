@@ -10,6 +10,7 @@ defineProps<{
       <slot>Hi</slot>
     </button>
     <slot name="header"></slot>
+    <slot name="Ted"></slot>
   </div>
 </template>
 

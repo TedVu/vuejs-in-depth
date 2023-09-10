@@ -8,7 +8,9 @@ import HelloWorld from './components/HelloWorld.vue'
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld v-slot="slotProps">Hello {{ slotProps.text }} </HelloWorld>
+      <HelloWorld>
+        <template #header="{ msg }"> Hi {{ msg }} </template>
+      </HelloWorld>
 
       <nav>
         <RouterLink to="/">Home</RouterLink>

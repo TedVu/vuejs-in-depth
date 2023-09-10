@@ -9,9 +9,7 @@ defineProps<{
 
 <template>
   <!-- <MyComponent> template -->
-  <div>
-    <slot text="Ted"></slot>
-  </div>
+  <div><slot name="header" msg="Ted"></slot></div>
 </template>
 
 <style scoped>

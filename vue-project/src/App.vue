@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-
-const dynamicSlotName = 'Ted'
 </script>
 
 <template>
@@ -10,11 +8,7 @@ const dynamicSlotName = 'Ted'
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!"
-        >Hello World Button
-        <template #header> Header slot should be rendered </template>
-        <template #[dynamicSlotName]>Dynamic Slot Name</template>
-      </HelloWorld>
+      <HelloWorld v-slot="slotProps">Hello {{ slotProps.text }} </HelloWorld>
 
       <nav>
         <RouterLink to="/">Home</RouterLink>

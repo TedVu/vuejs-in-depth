@@ -1,16 +1,16 @@
 <script setup lang="ts">
 defineProps<{
-  msg: string
+  msg: {
+    type: String
+    default: 'Ted'
+  }
 }>()
 </script>
 
 <template>
+  <!-- <MyComponent> template -->
   <div>
-    <button>
-      <slot>Hi</slot>
-    </button>
-    <slot name="header"></slot>
-    <slot name="Ted"></slot>
+    <slot text="Ted"></slot>
   </div>
 </template>
 

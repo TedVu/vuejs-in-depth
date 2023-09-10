@@ -9,7 +9,8 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <HelloWorld>
-        <template #header="{ msg }"> Hi {{ msg }} </template>
+        <template #header="{ headerMsg }"> Hi {{ headerMsg }} </template>
+        <template #footer="{ footerMsg }"> Hi {{ footerMsg }} </template>
       </HelloWorld>
 
       <nav>

@@ -1,15 +1,21 @@
 <script setup lang="ts">
 defineProps<{
-  msg: {
+  header: {
     type: String
     default: 'Ted'
+  }
+  footer: {
+    type: String
+    default: 'Kevin'
   }
 }>()
 </script>
 
 <template>
-  <!-- <MyComponent> template -->
-  <div><slot name="header" msg="Ted"></slot></div>
+  <span>
+    <slot name="header" headerMsg="Ted"></slot>
+    <slot name="footer" footerMsg="Kevin"></slot>
+  </span>
 </template>
 
 <style scoped>

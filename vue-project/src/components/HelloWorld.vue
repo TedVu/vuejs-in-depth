@@ -5,9 +5,12 @@ defineProps<{
 </script>
 
 <template>
-  <button>
-    <slot> Hi</slot>
-  </button>
+  <div>
+    <button>
+      <slot>Hi</slot>
+    </button>
+    <slot name="header"></slot>
+  </div>
 </template>
 
 <style scoped>
